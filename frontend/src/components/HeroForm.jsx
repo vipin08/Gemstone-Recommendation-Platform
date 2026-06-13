@@ -1,5 +1,5 @@
 export default function HeroForm() {
-  const vectorImage = new URL("../../../Vector.png", import.meta.url).href
+  const vectorImage = "/Vector.png"
 
   return (
     <div className="flex w-full justify-center">

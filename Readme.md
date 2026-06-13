@@ -44,7 +44,7 @@ npm run dev
 Backend runs on:
 
 ```text
-http://localhost:5000
+http://localhost:5001
 ```
 
 ### Frontend
@@ -59,6 +59,13 @@ Frontend runs on:
 
 ```text
 http://localhost:3000/
+```
+
+Run both together from two terminals:
+
+```bash
+cd backend && npm run dev
+cd frontend && npm run dev
 ```
 
 ## Environment Variables
@@ -113,9 +120,14 @@ GET /api/dashboard/stats
 GemAura/
 
 ├── frontend/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── node_modules/
 ├── backend/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── node_modules/
 ├── README.md
-├── AI_USAGE.md
 ```
 
 ## Recommendation Rules
