@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+
+  /* Warm cream / brown luxury palette */
+  --color-background: #faf5ea;
+  --color-foreground: #2a2018;
+  --color-card: #fffdf8;
+  --color-card-foreground: #2a2018;
+  --color-muted: #f1e9d9;
+  --color-muted-foreground: #7a6c58;
+  --color-border: #e7dcc7;
+  --color-input: #e7dcc7;
+
+  /* Terracotta primary */
+  --color-primary: #b05c41;
+  --color-primary-hover: #9a4e36;
+  --color-primary-foreground: #fdf6ee;
+
+  /* Gold accent */
+  --color-accent: #c08a2d;
+  --color-accent-foreground: #2a2018;
+
+  --color-ring: #b05c41;
+
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Reusable component helpers */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
