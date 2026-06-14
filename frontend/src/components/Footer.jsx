@@ -44,6 +44,8 @@ export default function Footer() {
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
         &copy; {new Date().getFullYear()} GemAura. Crafted with zodiac wisdom.
+        <br></br>
+        Created by Vipin student at Chitkara University
       </div>
     </footer>
   )
